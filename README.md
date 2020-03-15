@@ -17,7 +17,7 @@ without having to specify hardcoded library paths or names.
 
 # Installation #
 
-  * git clone [libssh, tested w/ v0.9.3](git://git.libssh.org/projects/libssh.git)
+  * git clone [libssh, tested w/ v0.9.3](https://git.libssh.org/projects/libssh.git/)
   * Create a folder called build in this directory
   * git clone [libssh-x86_x64](https://github.com/sridharb1/libssh-x86_x64.git)
     to another folder
