@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="$(SolutionDir)..\src\agent.c" />
+    <ClCompile Include="$(SolutionDir)..\src\auth.c" />
+    <ClCompile Include="$(SolutionDir)..\src\base64.c" />
+    <ClCompile Include="$(SolutionDir)..\src\bignum.c" />
+    <ClCompile Include="$(SolutionDir)..\src\buffer.c" />
+    <ClCompile Include="$(SolutionDir)..\src\callbacks.c" />
+    <ClCompile Include="$(SolutionDir)..\src\channels.c" />
+    <ClCompile Include="$(SolutionDir)..\src\client.c" />
+    <ClCompile Include="$(SolutionDir)..\src\config.c" />
+    <ClCompile Include="$(SolutionDir)..\src\connect.c" />
+    <ClCompile Include="$(SolutionDir)..\src\connector.c" />
+    <ClCompile Include="$(SolutionDir)..\src\curve25519.c" />
+    <ClCompile Include="$(SolutionDir)..\src\dh.c" />
+    <ClCompile Include="$(SolutionDir)..\src\ecdh.c" />
+    <ClCompile Include="$(SolutionDir)..\src\error.c" />
+    <ClCompile Include="$(SolutionDir)..\src\getpass.c" />
+    <ClCompile Include="$(SolutionDir)..\src\init.c" />
+    <ClCompile Include="$(SolutionDir)..\src\kdf.c" />
+    <ClCompile Include="$(SolutionDir)..\src\kex.c" />
+    <ClCompile Include="$(SolutionDir)..\src\known_hosts.c" />
+    <ClCompile Include="$(SolutionDir)..\src\knownhosts.c" />
+    <ClCompile Include="$(SolutionDir)..\src\legacy.c" />
+    <ClCompile Include="$(SolutionDir)..\src\log.c" />
+    <ClCompile Include="$(SolutionDir)..\src\match.c" />
+    <ClCompile Include="$(SolutionDir)..\src\messages.c" />
+    <ClCompile Include="$(SolutionDir)..\src\misc.c" />
+    <ClCompile Include="$(SolutionDir)..\src\options.c" />
+    <ClCompile Include="$(SolutionDir)..\src\packet.c" />
+    <ClCompile Include="$(SolutionDir)..\src\packet_cb.c" />
+    <ClCompile Include="$(SolutionDir)..\src\packet_crypt.c" />
+    <ClCompile Include="$(SolutionDir)..\src\pcap.c" />
+    <ClCompile Include="$(SolutionDir)..\src\pki.c" />
+    <ClCompile Include="$(SolutionDir)..\src\pki_container_openssh.c" />
+    <ClCompile Include="$(SolutionDir)..\src\poll.c" />
+    <ClCompile Include="$(SolutionDir)..\src\session.c" />
+    <ClCompile Include="$(SolutionDir)..\src\scp.c" />
+    <ClCompile Include="$(SolutionDir)..\src\socket.c" />
+    <ClCompile Include="$(SolutionDir)..\src\string.c" />
+    <ClCompile Include="$(SolutionDir)..\src\threads.c" />
+    <ClCompile Include="$(SolutionDir)..\src\wrapper.c" />
+    <ClCompile Include="$(SolutionDir)..\src\external\bcrypt_pbkdf.c" />
+    <ClCompile Include="$(SolutionDir)..\src\external\blowfish.c" />
+    <ClCompile Include="$(SolutionDir)..\src\external\chacha.c" />
+    <ClCompile Include="$(SolutionDir)..\src\external\poly1305.c" />
+    <ClCompile Include="$(SolutionDir)..\src\chachapoly.c" />
+    <ClCompile Include="$(SolutionDir)..\src\config_parser.c" />
+    <ClCompile Include="$(SolutionDir)..\src\token.c" />
+    <ClCompile Include="$(SolutionDir)..\src\pki_ed25519_common.c" />
+    <ClCompile Include="$(SolutionDir)..\src\threads\noop.c" />
+    <ClCompile Include="$(SolutionDir)..\src\threads\winlocks.c" />
+    <ClCompile Include="$(SolutionDir)..\src\threads\libcrypto.c" />
+    <ClCompile Include="$(SolutionDir)..\src\pki_crypto.c" />
+    <ClCompile Include="$(SolutionDir)..\src\ecdh_crypto.c" />
+    <ClCompile Include="$(SolutionDir)..\src\libcrypto.c" />
+    <ClCompile Include="$(SolutionDir)..\src\dh_crypto.c" />
+    <ClCompile Include="$(SolutionDir)..\src\pki_ed25519.c" />
+    <ClCompile Include="$(SolutionDir)..\src\external\ed25519.c" />
+    <ClCompile Include="$(SolutionDir)..\src\external\fe25519.c" />
+    <ClCompile Include="$(SolutionDir)..\src\external\ge25519.c" />
+    <ClCompile Include="$(SolutionDir)..\src\external\sc25519.c" />
+    <ClCompile Include="$(SolutionDir)..\src\sftp.c" />
+    <ClCompile Include="$(SolutionDir)..\src\sftpserver.c" />
+    <ClCompile Include="$(SolutionDir)..\src\server.c" />
+    <ClCompile Include="$(SolutionDir)..\src\bind.c" />
+    <ClCompile Include="$(SolutionDir)..\src\bind_config.c" />
+    <ClCompile Include="$(SolutionDir)..\src\dh-gex.c" />
+    <ClCompile Include="$(SolutionDir)..\src\gzip.c" />
+    <ClCompile Include="$(SolutionDir)..\src\external\curve25519_ref.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9B45C477-7239-3D57-B36C-D2FF2D9C3E15}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
