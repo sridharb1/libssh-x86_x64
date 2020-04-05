@@ -78,7 +78,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)src;$(SolutionDir)..\src;$(SolutionDir)..\include;$(SolutionDir)..\..\zlib;$(SolutionDir)..\..\openssl\build\openssl\$(Platform)\$(Configuration)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\;$(ProjectDir)..\src;$(ProjectDir)..\..\src;$(ProjectDir)..\..\include;$(ProjectDir)..\..\..\zlib;$(ProjectDir)..\..\..\openssl\build\openssl\$(Platform)\$(Configuration)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsC</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -94,10 +94,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS; _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES=1; _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT=1; _CRT_NONSTDC_NO_WARNINGS=1; _CRT_SECURE_NO_WARNINGS=1;_GNU_SOURCE;CMAKE_INTDIR=\"Debug\";LIBSSH_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)src;$(SolutionDir)..\src;$(SolutionDir)..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\src;$(ProjectDir)..\..\src;$(ProjectDir)..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>$(SolutionDir)src;$(SolutionDir)..\src;$(SolutionDir)..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\src;$(ProjectDir)..\..\src;$(ProjectDir)..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -118,7 +118,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)src;$(SolutionDir)..\src;$(SolutionDir)..\include;$(SolutionDir)..\..\zlib;$(SolutionDir)..\..\openssl\build\openssl\$(Platform)\$(Configuration)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\;$(ProjectDir)..\src;$(ProjectDir)..\..\src;$(ProjectDir)..\..\include;$(ProjectDir)..\..\..\zlib;$(ProjectDir)..\..\..\openssl\build\openssl\$(Platform)\$(Configuration)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsC</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -134,10 +134,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS; _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES=1; _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT=1; _CRT_NONSTDC_NO_WARNINGS=1; _CRT_SECURE_NO_WARNINGS=1;_GNU_SOURCE;CMAKE_INTDIR=\"Debug\";LIBSSH_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)src;$(SolutionDir)..\src;$(SolutionDir)..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\src;$(ProjectDir)..\..\src;$(ProjectDir)..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>$(SolutionDir)src;$(SolutionDir)..\src;$(SolutionDir)..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\src;$(ProjectDir)..\..\src;$(ProjectDir)..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -158,7 +158,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)src;$(SolutionDir)..\src;$(SolutionDir)..\include;$(SolutionDir)..\..\zlib;$(SolutionDir)..\..\openssl\build\openssl\$(Platform)\$(Configuration)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\;$(ProjectDir)..\src;$(ProjectDir)..\..\src;$(ProjectDir)..\..\include;$(ProjectDir)..\..\..\zlib;$(ProjectDir)..\..\..\openssl\build\openssl\$(Platform)\$(Configuration)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsC</CompileAs>
       <ExceptionHandling>
       </ExceptionHandling>
@@ -174,10 +174,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG; _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES=1; _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT=1; _CRT_NONSTDC_NO_WARNINGS=1; _CRT_SECURE_NO_WARNINGS=1;_GNU_SOURCE;CMAKE_INTDIR=\"Release\";LIBSSH_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)src;$(SolutionDir)..\src;$(SolutionDir)..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\src;$(ProjectDir)..\..\src;$(ProjectDir)..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>$(SolutionDir)src;$(SolutionDir)..\src;$(SolutionDir)..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\src;$(ProjectDir)..\..\src;$(ProjectDir)..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -198,7 +198,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)src;$(SolutionDir)..\src;$(SolutionDir)..\include;$(SolutionDir)..\..\zlib;$(SolutionDir)..\..\openssl\build\openssl\$(Platform)\$(Configuration)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\;$(ProjectDir)..\src;$(ProjectDir)..\..\src;$(ProjectDir)..\..\include;$(ProjectDir)..\..\..\zlib;$(ProjectDir)..\..\..\openssl\build\openssl\$(Platform)\$(Configuration)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsC</CompileAs>
       <ExceptionHandling>
       </ExceptionHandling>
@@ -214,10 +214,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG; _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES=1; _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT=1; _CRT_NONSTDC_NO_WARNINGS=1; _CRT_SECURE_NO_WARNINGS=1;_GNU_SOURCE;CMAKE_INTDIR=\"Release\";LIBSSH_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)src;$(SolutionDir)..\src;$(SolutionDir)..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\src;$(ProjectDir)..\..\src;$(ProjectDir)..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>$(SolutionDir)src;$(SolutionDir)..\src;$(SolutionDir)..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\src;$(ProjectDir)..\..\src;$(ProjectDir)..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -237,78 +237,78 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="$(SolutionDir)..\src\agent.c" />
-    <ClCompile Include="$(SolutionDir)..\src\auth.c" />
-    <ClCompile Include="$(SolutionDir)..\src\base64.c" />
-    <ClCompile Include="$(SolutionDir)..\src\bignum.c" />
-    <ClCompile Include="$(SolutionDir)..\src\buffer.c" />
-    <ClCompile Include="$(SolutionDir)..\src\callbacks.c" />
-    <ClCompile Include="$(SolutionDir)..\src\channels.c" />
-    <ClCompile Include="$(SolutionDir)..\src\client.c" />
-    <ClCompile Include="$(SolutionDir)..\src\config.c" />
-    <ClCompile Include="$(SolutionDir)..\src\connect.c" />
-    <ClCompile Include="$(SolutionDir)..\src\connector.c" />
-    <ClCompile Include="$(SolutionDir)..\src\curve25519.c" />
-    <ClCompile Include="$(SolutionDir)..\src\dh.c" />
-    <ClCompile Include="$(SolutionDir)..\src\ecdh.c" />
-    <ClCompile Include="$(SolutionDir)..\src\error.c" />
-    <ClCompile Include="$(SolutionDir)..\src\getpass.c" />
-    <ClCompile Include="$(SolutionDir)..\src\init.c" />
-    <ClCompile Include="$(SolutionDir)..\src\kdf.c" />
-    <ClCompile Include="$(SolutionDir)..\src\kex.c" />
-    <ClCompile Include="$(SolutionDir)..\src\known_hosts.c" />
-    <ClCompile Include="$(SolutionDir)..\src\knownhosts.c" />
-    <ClCompile Include="$(SolutionDir)..\src\legacy.c" />
-    <ClCompile Include="$(SolutionDir)..\src\log.c" />
-    <ClCompile Include="$(SolutionDir)..\src\match.c" />
-    <ClCompile Include="$(SolutionDir)..\src\messages.c" />
-    <ClCompile Include="$(SolutionDir)..\src\misc.c" />
-    <ClCompile Include="$(SolutionDir)..\src\options.c" />
-    <ClCompile Include="$(SolutionDir)..\src\packet.c" />
-    <ClCompile Include="$(SolutionDir)..\src\packet_cb.c" />
-    <ClCompile Include="$(SolutionDir)..\src\packet_crypt.c" />
-    <ClCompile Include="$(SolutionDir)..\src\pcap.c" />
-    <ClCompile Include="$(SolutionDir)..\src\pki.c" />
-    <ClCompile Include="$(SolutionDir)..\src\pki_container_openssh.c" />
-    <ClCompile Include="$(SolutionDir)..\src\poll.c" />
-    <ClCompile Include="$(SolutionDir)..\src\session.c" />
-    <ClCompile Include="$(SolutionDir)..\src\scp.c" />
-    <ClCompile Include="$(SolutionDir)..\src\socket.c" />
-    <ClCompile Include="$(SolutionDir)..\src\string.c" />
-    <ClCompile Include="$(SolutionDir)..\src\threads.c" />
-    <ClCompile Include="$(SolutionDir)..\src\wrapper.c" />
-    <ClCompile Include="$(SolutionDir)..\src\external\bcrypt_pbkdf.c" />
-    <ClCompile Include="$(SolutionDir)..\src\external\blowfish.c" />
-    <ClCompile Include="$(SolutionDir)..\src\external\chacha.c" />
-    <ClCompile Include="$(SolutionDir)..\src\external\poly1305.c" />
-    <ClCompile Include="$(SolutionDir)..\src\chachapoly.c" />
-    <ClCompile Include="$(SolutionDir)..\src\config_parser.c" />
-    <ClCompile Include="$(SolutionDir)..\src\token.c" />
-    <ClCompile Include="$(SolutionDir)..\src\pki_ed25519_common.c" />
-    <ClCompile Include="$(SolutionDir)..\src\threads\noop.c" />
-    <ClCompile Include="$(SolutionDir)..\src\threads\winlocks.c" />
-    <ClCompile Include="$(SolutionDir)..\src\threads\libcrypto.c">
+    <ClCompile Include="$(ProjectDir)..\..\src\agent.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\auth.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\base64.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\bignum.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\buffer.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\callbacks.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\channels.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\client.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\config.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\connect.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\connector.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\curve25519.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\dh.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\ecdh.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\error.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\getpass.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\init.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\kdf.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\kex.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\known_hosts.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\knownhosts.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\legacy.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\log.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\match.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\messages.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\misc.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\options.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\packet.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\packet_cb.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\packet_crypt.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\pcap.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\pki.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\pki_container_openssh.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\poll.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\session.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\scp.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\socket.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\string.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\threads.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\wrapper.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\external\bcrypt_pbkdf.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\external\blowfish.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\external\chacha.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\external\poly1305.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\chachapoly.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\config_parser.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\token.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\pki_ed25519_common.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\threads\noop.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\threads\winlocks.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\threads\libcrypto.c">
       <ObjectFileName>$(IntDir)/threads/libcrypto.c.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)..\src\pki_crypto.c" />
-    <ClCompile Include="$(SolutionDir)..\src\ecdh_crypto.c" />
-    <ClCompile Include="$(SolutionDir)..\src\libcrypto.c">
+    <ClCompile Include="$(ProjectDir)..\..\src\pki_crypto.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\ecdh_crypto.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\libcrypto.c">
       <ObjectFileName>$(IntDir)/libcrypto.c.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)..\src\dh_crypto.c" />
-    <ClCompile Include="$(SolutionDir)..\src\pki_ed25519.c" />
-    <ClCompile Include="$(SolutionDir)..\src\external\ed25519.c" />
-    <ClCompile Include="$(SolutionDir)..\src\external\fe25519.c" />
-    <ClCompile Include="$(SolutionDir)..\src\external\ge25519.c" />
-    <ClCompile Include="$(SolutionDir)..\src\external\sc25519.c" />
-    <ClCompile Include="$(SolutionDir)..\src\sftp.c" />
-    <ClCompile Include="$(SolutionDir)..\src\sftpserver.c" />
-    <ClCompile Include="$(SolutionDir)..\src\server.c" />
-    <ClCompile Include="$(SolutionDir)..\src\bind.c" />
-    <ClCompile Include="$(SolutionDir)..\src\bind_config.c" />
-    <ClCompile Include="$(SolutionDir)..\src\dh-gex.c" />
-    <ClCompile Include="$(SolutionDir)..\src\gzip.c" />
-    <ClCompile Include="$(SolutionDir)..\src\external\curve25519_ref.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\dh_crypto.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\pki_ed25519.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\external\ed25519.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\external\fe25519.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\external\ge25519.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\external\sc25519.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\sftp.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\sftpserver.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\server.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\bind.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\bind_config.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\dh-gex.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\gzip.c" />
+    <ClCompile Include="$(ProjectDir)..\..\src\external\curve25519_ref.c" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\openssl\build\libcrypto-1_1\libcrypto-1_1.vcxproj">
