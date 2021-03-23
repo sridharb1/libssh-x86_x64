@@ -91,6 +91,7 @@
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;LIBSSH_STATIC;ZLIB_WINAPI; _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES=1; _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT=1; _CRT_NONSTDC_NO_WARNINGS=1; _CRT_SECURE_NO_WARNINGS=1;_GNU_SOURCE;CMAKE_INTDIR="Debug";LIBSSH_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS; _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES=1; _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT=1; _CRT_NONSTDC_NO_WARNINGS=1; _CRT_SECURE_NO_WARNINGS=1;_GNU_SOURCE;CMAKE_INTDIR=\"Debug\";LIBSSH_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -131,6 +132,7 @@
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;LIBSSH_STATIC;ZLIB_WINAPI; _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES=1; _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT=1; _CRT_NONSTDC_NO_WARNINGS=1; _CRT_SECURE_NO_WARNINGS=1;_GNU_SOURCE;CMAKE_INTDIR="Debug";LIBSSH_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS; _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES=1; _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT=1; _CRT_NONSTDC_NO_WARNINGS=1; _CRT_SECURE_NO_WARNINGS=1;_GNU_SOURCE;CMAKE_INTDIR=\"Debug\";LIBSSH_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
